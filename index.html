@@ -6,10 +6,10 @@
     <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
-    <video id="video" src="video.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline muted style="display: none;"></video>
+    <video id="otovideo" src="otovideo.mp4" autoplay loop crossorigin="anonymous" playsinline webkit-playsinline muted style="display: none;"></video>
     <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
       <a-marker preset="hiro">
-        <a-video src="#video" width="1" height="1.367" position="0 0.5 0" rotation="-90 0 0"></a-video>
+        <a-video src="#otovideo" position="0 0.5 0" rotation="-90 0 0"></a-video>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
