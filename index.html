@@ -13,12 +13,12 @@
     
     <!-- Assets: Definindo o vídeo -->
     <a-assets>
-      <video id="video" src="video.mp4" autoplay loop muted playsinline webkit-playsinline crossorigin="anonymous"></video>
+      <video id="video" src="video.mp4" autoplay muted playsinline webkit-playsinline crossorigin="anonymous" loop></video>
     </a-assets>
 
     <!-- Marcador Hiro: Colocando o vídeo no marcador -->
     <a-marker preset="hiro">
-      <a-video src="#video" width="1" height="1.367" position="0 0 0" rotation="-90 0 0"></a-video>
+      <a-video src="#video" width="1" height="1.367" position="0 0 0" rotation="-90 0 0" loop="true"></a-video>
     </a-marker>
 
     <!-- Câmera -->
@@ -28,6 +28,7 @@
 
 </body>
 </html>
+
 
 
 <!--  <!DOCTYPE html>
